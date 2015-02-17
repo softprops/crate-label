@@ -1,0 +1,13 @@
+[package]
+
+name = "crate-label"
+version = "0.0.1"
+authors = ["softprops <d.tangren@gmail.com>"]
+
+[dependencies.nickel]
+
+git = "https://github.com/nickel-org/nickel.rs.git"
+
+[dependencies.nickel_macros]
+
+git = "https://github.com/nickel-org/nickel.rs.git"
