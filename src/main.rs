@@ -19,10 +19,8 @@ fn main() {
         .ok().expect("invalid url");
       match Client::new().get(uri).send() {
         Ok(mut res) => {
-
            let payload = res.read_to_string().ok()
                .and_then(|s| Json::from_str(&s).ok());
-
            let max_version = match payload {
              Some(ref j) => j.find("crate"),
              _ => None
