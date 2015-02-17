@@ -5,6 +5,7 @@ dependencies = [
  "hyper 0.1.12 (git+https://github.com/hyperium/hyper)",
  "nickel 0.1.0 (git+https://github.com/nickel-org/nickel.rs.git)",
  "nickel_macros 0.0.1 (git+https://github.com/nickel-org/nickel.rs.git)",
+ "rustc-serialize 0.2.13 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
