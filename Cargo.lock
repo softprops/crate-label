@@ -2,8 +2,20 @@
 name = "crate-label"
 version = "0.0.1"
 dependencies = [
+ "hyper 0.1.12 (git+https://github.com/hyperium/hyper)",
  "nickel 0.1.0 (git+https://github.com/nickel-org/nickel.rs.git)",
  "nickel_macros 0.0.1 (git+https://github.com/nickel-org/nickel.rs.git)",
+]
+
+[[package]]
+name = "cookie"
+version = "0.1.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "openssl 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-serialize 0.2.13 (registry+https://github.com/rust-lang/crates.io-index)",
+ "time 0.1.17 (registry+https://github.com/rust-lang/crates.io-index)",
+ "url 0.2.20 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -32,6 +44,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "hyper"
+version = "0.1.12"
+source = "git+https://github.com/hyperium/hyper#51bf1122dd4a5579dbaece0552f593584e883aa2"
+dependencies = [
+ "cookie 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "mime 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "openssl 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-serialize 0.2.13 (registry+https://github.com/rust-lang/crates.io-index)",
+ "time 0.1.17 (registry+https://github.com/rust-lang/crates.io-index)",
+ "unicase 0.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "unsafe-any 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "url 0.2.20 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "libc"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -53,6 +81,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 name = "matches"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "mime"
+version = "0.0.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "log 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "nickel"
@@ -163,6 +199,11 @@ dependencies = [
  "phantom 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "unsafe-any 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "unicase"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "unsafe-any"

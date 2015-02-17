@@ -11,3 +11,6 @@ git = "https://github.com/nickel-org/nickel.rs.git"
 [dependencies.nickel_macros]
 
 git = "https://github.com/nickel-org/nickel.rs.git"
+
+[dependencies.hyper]
+git = "https://github.com/hyperium/hyper"
