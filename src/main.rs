@@ -1,10 +1,10 @@
-#![feature(plugin, io)]
+#![feature(plugin)]
 extern crate iron;
 extern crate router;
 extern crate mime;
 extern crate hyper;
-extern crate "rustc-serialize" as rustc_serialize;
-extern crate "handlebars-iron" as handlebars_iron;
+extern crate rustc_serialize;
+extern crate handlebars_iron;
 
 use hyper::{ Client, Url };
 use iron::headers::ContentType;
